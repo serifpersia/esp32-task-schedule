@@ -12,7 +12,7 @@ This is a basic template project for scheduling tasks with ESP32. It allows you 
 To build this project using the Arduino IDE, you will need the following libraries:
 - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
-- [WebSocketsServer](https://github.com/Links2004/arduinoWebSockets)
+- [WebSockets](https://github.com/Links2004/arduinoWebSockets)
 - [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 
 For uploading SPIFFS, you can use my [ESP32PartitionTool](https://github.com/serifpersia/esp32partitiontool).
