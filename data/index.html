@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESP32 Task Scheduler</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>ESP32 Task Scheduler</h1>
+
+            <div id="time-section">
+                <h2>Set Time</h2>
+                <input type="time" id="time-input">
+                <button onclick="setTime()">Set Time</button>
+            </div>
+
+            <div id="duration-section">
+                <h2>Set Duration (seconds)</h2>
+                <input type="number" id="duration-input" onInput="setDuration()">
+            </div>
+
+            <div id="toggle-section">
+                <h2>Toggle System</h2>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-switch" onchange="toggleSystem()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
