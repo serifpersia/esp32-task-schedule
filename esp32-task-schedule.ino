@@ -177,7 +177,7 @@ void loop() {
   if (currentTime == timeSet + ":00" && isSystemEnabled) {
     // Check if the seconds are in the range [0, 9]
     if (!activityStarted) {
-      activateFunction();
+      runActivity();
       activityStarted = true;
       activityStartTime = currentMillis; // Set the activity start time
     }
@@ -196,7 +196,7 @@ void updateTime()
   timeClient.setTimeOffset(totalOffsetSeconds);
 }
 
-void activateFunction() {
+void runActivity() {
   digitalWrite(LED_PIN, HIGH);
   Serial.println("Activity started");
 }
