@@ -9,7 +9,7 @@ This is a basic template project for scheduling tasks with ESP32. It allows you 
 
 ## Required Libraries
 
-To build this project using the Arduino IDE, you will need the following libraries:
+To build this project using the Arduino IDE 1.8.x, you will need the following libraries:
 - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
 - [WebSockets](https://github.com/Links2004/arduinoWebSockets)
