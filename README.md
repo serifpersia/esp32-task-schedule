@@ -30,7 +30,7 @@ For uploading SPIFFS, you can use my [ESP32PartitionTool](https://github.com/ser
 3. Use the toggle to enable the task.
 4. Every time the page is loaded, the ESP32 sends its values to the web browser client, so the UI reflects the state of the ESP32.
 5. Every minute, the internet time gets updated to prevent time drift.
-6. At the scheduled time, the `runActivity` function will execute. You will see a printout and the LED light up for the duration set from the website UI. the `stopActivity` print indicates the task finished running.
+6. At the scheduled time, the `runActivity` function will execute. You will see a printout and the LED light up for the duration set from the website UI. The `stopActivity` print indicates the task finished running.
 7. You can modify the `runActivity` function to control a servo or perform any other desired action.
 
 ## License
