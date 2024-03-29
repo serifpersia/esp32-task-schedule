@@ -175,14 +175,12 @@ void loop() {
 
   // Check if the current time matches the time set by the user and the system is enabled
   if (currentTime == timeSet + ":00" && isSystemEnabled) {
-    // Check if the seconds are in the range [0, 9]
     if (!activityStarted) {
       runActivity();
       activityStarted = true;
       activityStartTime = currentMillis; // Set the activity start time
     }
   } else {
-    // If the activity was started and the seconds are not in the range [0, 9], stop it
     if (activityStarted && (currentMillis - activityStartTime >= (durationSet * 1000))) {
       stopActivity();
       activityStarted = false;
@@ -219,7 +217,7 @@ void handleWebSocketMessage(uint8_t num, WStype_t type, uint8_t * payload, size_
       // Save configuration after updating the variable
       saveConfig();
     }
-    if (strcmp(messageType, "set_time") == 0) {
+    else if (strcmp(messageType, "set_time") == 0) {
       const char* setTime = doc["time"];
       timeSet = setTime;
       // Save configuration after updating the variable
